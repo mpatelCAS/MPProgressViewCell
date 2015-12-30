@@ -39,7 +39,7 @@
     progressCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MPCell"
                                                      forIndexPath:indexPath];
 
-    [cell.imgView mp_setImageFromURL:[NSURL URLWithString:@"http://img0.mxstatic.com/wallpapers/fc3704f2c4a958aca26f77f5d8b47852_large.jpeg"]];
+    [cell.imgView mp_setImageFromURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3590/3329114220_5fbc5bc92b.jpg"]];
 
     return cell;
 }
