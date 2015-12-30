@@ -19,14 +19,7 @@ Pod::Spec.new do |s|
   s.version      = "1.0"
   s.summary      = "It's Simple UIImageView Category Class which is for downloading image from remote server using SDWebImage and DACircleProgressView "
 
-  s.description  = <<-DESC
-                   It's Simple UIImageView Category Class which is for downloading image from remote server using SDWebImage and DACircleProgressView .
-
-                   * Think: Why did you write this? What is the focus? What does it do?
-                   * CocoaPods will be using this to generate tags, and improve search results.
-                   * Try to keep it short, snappy and to the point.
-                   * Finally, don't worry about the indent, CocoaPods strips it!
-                   DESC
+  s.description  =  "It's Simple UIImageView Category Class which is for downloading image from remote server using SDWebImage and DACircleProgressView"
 
   s.homepage     = "https://github.com/mpatelCAS/MPProgressViewCell"
   # s.screenshots  = "http://postimg.org/image/ofs6y9fsr/", "http://postimg.org/image/j1g6g34ul/"
