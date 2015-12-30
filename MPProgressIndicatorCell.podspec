@@ -13,4 +13,5 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, '8.0'
   s.source_files = 'MPProgressIndicatorCell/MPProgressViewCell/MPProgressCell.h,m'
-  s.requires_arc = trueend
+  s.requires_arc = true
+  end
