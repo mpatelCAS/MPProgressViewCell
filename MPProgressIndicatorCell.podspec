@@ -9,4 +9,5 @@ Pod::Spec.new do |spec|
   spec.source_files     = 'MPProgressIndicatorCell/MPProgressViewCell/MPProgressCell.h,m'
   spec.framework        = 'SystemConfiguration'
   spec.requires_arc     = true
+  s.platform = :ios
 end
