@@ -48,13 +48,4 @@
     return 110.0f;
 }
 
-#pragma mark -
-#pragma mark - HLExplicitImageView
-
-- (void)imageViewAskedToRetry:(UIImageView *)imageView
-{
-    NSLog(@"Done");
-}
-
-
 @end
