@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "MPProgressViewCell", "MPProgressIndicatorCell/MPProgressViewCell/**/*.{h,m}"
+  s.source_files  = 'MPProgressViewCell/MPProgressIndicatorCell/MPProgressViewCell/MPProgressCell.h'
 
   # s.public_header_files = "MPProgressViewCell/**/*.h"
 
