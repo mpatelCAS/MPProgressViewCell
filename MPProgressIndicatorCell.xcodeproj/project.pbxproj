@@ -16,10 +16,10 @@
 		087467251C339B11003D80CC /* MPProgressIndicatorCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467241C339B11003D80CC /* MPProgressIndicatorCellTests.m */; };
 		087467301C339B11003D80CC /* MPProgressIndicatorCellUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0874672F1C339B11003D80CC /* MPProgressIndicatorCellUITests.m */; };
 		087467491C339EA0003D80CC /* progressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467481C339EA0003D80CC /* progressCell.m */; settings = {ASSET_TAGS = (); }; };
-		087467691C33A5AC003D80CC /* ImageError.png in Resources */ = {isa = PBXBuildFile; fileRef = 087467641C33A5AC003D80CC /* ImageError.png */; settings = {ASSET_TAGS = (); }; };
-		0874676A1C33A5AC003D80CC /* ImageError@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 087467651C33A5AC003D80CC /* ImageError@2x.png */; settings = {ASSET_TAGS = (); }; };
-		0874676B1C33A5AC003D80CC /* ImageError@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 087467661C33A5AC003D80CC /* ImageError@3x.png */; settings = {ASSET_TAGS = (); }; };
-		0874676C1C33A5AC003D80CC /* MPProgressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 087467681C33A5AC003D80CC /* MPProgressCell.m */; settings = {ASSET_TAGS = (); }; };
+		08A1A3651C33BDBF00C86757 /* ImageError.png in Resources */ = {isa = PBXBuildFile; fileRef = 08A1A3601C33BDBF00C86757 /* ImageError.png */; settings = {ASSET_TAGS = (); }; };
+		08A1A3661C33BDBF00C86757 /* ImageError@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08A1A3611C33BDBF00C86757 /* ImageError@2x.png */; settings = {ASSET_TAGS = (); }; };
+		08A1A3671C33BDBF00C86757 /* ImageError@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08A1A3621C33BDBF00C86757 /* ImageError@3x.png */; settings = {ASSET_TAGS = (); }; };
+		08A1A3681C33BDBF00C86757 /* MPProgressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A1A3641C33BDBF00C86757 /* MPProgressCell.m */; settings = {ASSET_TAGS = (); }; };
 		4CCE4F036AA51D44D664D695 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D7BE1AF63059B73EC6A591 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -59,11 +59,11 @@
 		087467311C339B11003D80CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		087467471C339EA0003D80CC /* progressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = progressCell.h; sourceTree = "<group>"; };
 		087467481C339EA0003D80CC /* progressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = progressCell.m; sourceTree = "<group>"; };
-		087467641C33A5AC003D80CC /* ImageError.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageError.png; sourceTree = "<group>"; };
-		087467651C33A5AC003D80CC /* ImageError@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageError@2x.png"; sourceTree = "<group>"; };
-		087467661C33A5AC003D80CC /* ImageError@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageError@3x.png"; sourceTree = "<group>"; };
-		087467671C33A5AC003D80CC /* MPProgressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPProgressCell.h; sourceTree = "<group>"; };
-		087467681C33A5AC003D80CC /* MPProgressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPProgressCell.m; sourceTree = "<group>"; };
+		08A1A3601C33BDBF00C86757 /* ImageError.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ImageError.png; sourceTree = "<group>"; };
+		08A1A3611C33BDBF00C86757 /* ImageError@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageError@2x.png"; sourceTree = "<group>"; };
+		08A1A3621C33BDBF00C86757 /* ImageError@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ImageError@3x.png"; sourceTree = "<group>"; };
+		08A1A3631C33BDBF00C86757 /* MPProgressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPProgressCell.h; sourceTree = "<group>"; };
+		08A1A3641C33BDBF00C86757 /* MPProgressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPProgressCell.m; sourceTree = "<group>"; };
 		16C58D39444E5476977BB2C7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B5D7BE1AF63059B73EC6A591 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC282F2E32B4A00B6F37EC77 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -120,7 +120,7 @@
 		087467091C339B11003D80CC /* MPProgressIndicatorCell */ = {
 			isa = PBXGroup;
 			children = (
-				087467631C33A5AC003D80CC /* MPProgressViewCell */,
+				08A1A35F1C33BDBF00C86757 /* MPProgressViewCell */,
 				0874670D1C339B11003D80CC /* AppDelegate.h */,
 				0874670E1C339B11003D80CC /* AppDelegate.m */,
 				087467471C339EA0003D80CC /* progressCell.h */,
@@ -162,14 +162,14 @@
 			path = MPProgressIndicatorCellUITests;
 			sourceTree = "<group>";
 		};
-		087467631C33A5AC003D80CC /* MPProgressViewCell */ = {
+		08A1A35F1C33BDBF00C86757 /* MPProgressViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				087467641C33A5AC003D80CC /* ImageError.png */,
-				087467651C33A5AC003D80CC /* ImageError@2x.png */,
-				087467661C33A5AC003D80CC /* ImageError@3x.png */,
-				087467671C33A5AC003D80CC /* MPProgressCell.h */,
-				087467681C33A5AC003D80CC /* MPProgressCell.m */,
+				08A1A3601C33BDBF00C86757 /* ImageError.png */,
+				08A1A3611C33BDBF00C86757 /* ImageError@2x.png */,
+				08A1A3621C33BDBF00C86757 /* ImageError@3x.png */,
+				08A1A3631C33BDBF00C86757 /* MPProgressCell.h */,
+				08A1A3641C33BDBF00C86757 /* MPProgressCell.m */,
 			);
 			path = MPProgressViewCell;
 			sourceTree = "<group>";
@@ -296,11 +296,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0874676B1C33A5AC003D80CC /* ImageError@3x.png in Resources */,
+				08A1A3671C33BDBF00C86757 /* ImageError@3x.png in Resources */,
 				0874671A1C339B11003D80CC /* LaunchScreen.storyboard in Resources */,
 				087467171C339B11003D80CC /* Assets.xcassets in Resources */,
-				087467691C33A5AC003D80CC /* ImageError.png in Resources */,
-				0874676A1C33A5AC003D80CC /* ImageError@2x.png in Resources */,
+				08A1A3651C33BDBF00C86757 /* ImageError.png in Resources */,
+				08A1A3661C33BDBF00C86757 /* ImageError@2x.png in Resources */,
 				087467151C339B11003D80CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,7 +360,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				087467121C339B11003D80CC /* ViewController.m in Sources */,
-				0874676C1C33A5AC003D80CC /* MPProgressCell.m in Sources */,
+				08A1A3681C33BDBF00C86757 /* MPProgressCell.m in Sources */,
 				087467491C339EA0003D80CC /* progressCell.m in Sources */,
 				0874670F1C339B11003D80CC /* AppDelegate.m in Sources */,
 				0874670C1C339B11003D80CC /* main.m in Sources */,
