@@ -7,12 +7,89 @@
 //
 
 #import "MPProgressCell.h"
+#import "UIImageView+WebCache.h"
 
 @implementation MPProgressCell
 
 #define             kRatio                      0.7f
 #define             kTrackTintColor             [UIColor lightGrayColor]
 #define             kProgressColor              [UIColor blackColor]
+
+-(void)mp_setImagefromURLwithPlaceholder:(NSURL *)url placeholderImage:(UIImage *)placeholder {
+
+    if (!_url &&
+        [url isKindOfClass:[NSURL class]]) {
+        _url = url;
+    }
+
+    if (!_url) {
+        NSLog(@"-HLExplicitImageView.m- No URL passed as parameter.");
+    }
+
+    DACircularProgressView *progressView = _circularProgressView;
+    CGRect destinationFrame;
+    if (!progressView)
+    {
+        destinationFrame = CGRectMake(CGRectGetWidth(self.frame) * kRatio / 2.0f,
+                                      CGRectGetHeight(self.frame) * kRatio / 2.0f,
+                                      CGRectGetWidth(self.frame) * (1.0f - kRatio),
+                                      CGRectGetHeight(self.frame) * (1.0f - kRatio));
+        progressView = [[DACircularProgressView alloc] initWithFrame:destinationFrame];
+
+        progressView.thicknessRatio = 0.1f;
+        progressView.trackTintColor = kTrackTintColor;
+        progressView.progressTintColor = kProgressColor;
+    }
+
+    [self addSubview:progressView];
+
+    if (_errorButton) {
+        _errorButton.hidden = YES;
+    }
+
+
+    [self sd_setImageWithURL:_url placeholderImage:placeholder options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+
+        CGFloat fProgress = ((CGFloat)receivedSize)/((CGFloat)expectedSize);
+        [progressView setProgress:fProgress animated:YES];
+
+    } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        [progressView removeFromSuperview];
+
+        if (image &&
+            !error)
+        {
+            self.image = image;
+
+            if ([url isKindOfClass:[UIButton class]] &&
+                [_delegate respondsToSelector:@selector(imageViewLoadedSuccessfully:)]) {
+                [_delegate imageViewLoadedSuccessfully:self];
+            }
+        }
+        else
+        {
+            if (!_errorButton)
+            {
+                _errorButton = [[UIButton alloc] initWithFrame:destinationFrame];
+
+                self.userInteractionEnabled = YES;
+                _errorButton.userInteractionEnabled = YES;
+                _errorButton.contentMode = UIViewContentModeScaleToFill;
+                [_errorButton setImage:[UIImage imageNamed:@"ImageError.png"] forState:UIControlStateNormal];
+
+                [_errorButton addTarget:self action:@selector(mp_setImageFromURL:) forControlEvents:UIControlEventTouchUpInside];
+
+                [self addSubview:_errorButton];
+                [self bringSubviewToFront:_errorButton];
+            }
+            else {
+                _errorButton.hidden = NO;
+            }
+            
+        }
+        
+    }];
+}
 
 - (void)mp_setImageFromURL:(NSURL *)url
 {
