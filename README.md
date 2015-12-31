@@ -47,8 +47,11 @@ See the code snippet below for an example of how to implement the MPProgressView
     progressCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MPCell"
                                                      forIndexPath:indexPath];
                                                      
-    [cell.imgView mp_setImageFromURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3590/3329114220_5fbc5bc92b.jpg"]];
+     [cell.imgView mp_setImageFromURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3590/3329114220_5fbc5bc92b.jpg"]];
 
+   /*  Now you can also show processing with placeholder image
+     [cell.imgView mp_setImagefromURLwithPlaceholder:[NSURL URLWithString:@"http://farm4.static.flickr.com/3590/3329114220_5fbc5bc92b.jpg"] placeholderImage:[UIImage imageNamed:@"22.png"]]; */
+   
     return cell;
 }
 
