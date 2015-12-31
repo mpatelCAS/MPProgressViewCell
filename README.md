@@ -60,7 +60,7 @@ See the code snippet below for an example of how to implement the MPProgressView
 
 ## Installation
 
-To install it, simply add the following line to your Podfile:
+MPProgressIndicatorCell is available through [CocoaPods](http://cocoapods.org) ,To install it, simply add the following line to your Podfile:
 
 ```ruby
 pod "MPProgressIndicatorCell"
@@ -74,7 +74,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 Then import the photo browser into your source files (or into your bridging header if you're using with Swift and not using frameworks with Cocoapods):
 
 ```obj-c
-#import "MPProgressViewCell/MPProgressCell.h""
+#import "MPProgressCell.h"
 ```
 
 If you are using Swift and frameworks, then you can just import the browser into your Swift source file:
