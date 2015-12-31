@@ -33,4 +33,6 @@
 
 - (void)mp_setImageFromURL:(NSURL *)url;
 
+- (void)mp_setImagefromURLwithPlaceholder:(NSURL *)url placeholderImage:(UIImage *)placeholder;
+
 @end
