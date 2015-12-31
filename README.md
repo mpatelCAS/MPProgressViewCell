@@ -13,6 +13,14 @@ MPProgressViewCell is designed to be presented within a navigation controller. S
 
 See the code snippet below for an example of how to implement the MPProgressViewCell. There is also a simple demo app within the project.
 
+###  Delegates
+
+```obj-c
+   [imageview mp_setImageFromURL:URL];
+   [imageview mp_setImagefromURLwithPlaceholder:URL
+                               placeholderImage:[UIImage imagenamed:@"placeholder.png"]];
+```
+
 
 ### Table View Cell
 
