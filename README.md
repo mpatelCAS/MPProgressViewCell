@@ -82,7 +82,7 @@ pod "MPProgressIndicatorCell"
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-Then import the photo browser into your source files (or into your bridging header if you're using with Swift and not using frameworks with Cocoapods):
+Then import the photo browser into your source files (or into your bridging header if you're using with Swift and not using frameworks with CocoaPods):
 
 ```obj-c
 #import "MPProgressCell.h"
