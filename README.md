@@ -99,6 +99,9 @@ import MPProgressCell
 
 Mayank Patel, mpatel@customapps.in
 
+## NOTE : 
+
+Better to use this from Pod,
 
 ## License
 
