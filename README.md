@@ -13,6 +13,14 @@ MPProgressViewCell is designed to be presented within a navigation controller. S
 
 See the code snippet below for an example of how to implement the MPProgressViewCell. There is also a simple demo app within the project.
 
+###  Delegates
+
+```obj-c
+   [imageview mp_setImageFromURL:URL];
+   [imageview mp_setImagefromURLwithPlaceholder:URL
+                               placeholderImage:[UIImage imagenamed:@"placeholder.png"]];
+```
+
 
 ### Table View Cell
 
@@ -47,8 +55,11 @@ See the code snippet below for an example of how to implement the MPProgressView
     progressCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MPCell"
                                                      forIndexPath:indexPath];
                                                      
-    [cell.imgView mp_setImageFromURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3590/3329114220_5fbc5bc92b.jpg"]];
+     [cell.imgView mp_setImageFromURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3590/3329114220_5fbc5bc92b.jpg"]];
 
+   /*  Now you can also show processing with placeholder image
+     [cell.imgView mp_setImagefromURLwithPlaceholder:[NSURL URLWithString:@"http://farm4.static.flickr.com/3590/3329114220_5fbc5bc92b.jpg"] placeholderImage:[UIImage imageNamed:@"22.png"]]; */
+   
     return cell;
 }
 
@@ -71,7 +82,7 @@ pod "MPProgressIndicatorCell"
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-Then import the photo browser into your source files (or into your bridging header if you're using with Swift and not using frameworks with Cocoapods):
+Then import the ProgressViewCell into your source files (or into your bridging header if you're using with Swift and not using frameworks with CocoaPods):
 
 ```obj-c
 #import "MPProgressCell.h"
@@ -88,6 +99,9 @@ import MPProgressCell
 
 Mayank Patel, mpatel@customapps.in
 
+## NOTE : 
+
+Better to use this from Pod,
 
 ## License
 
