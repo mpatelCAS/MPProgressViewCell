@@ -6,7 +6,30 @@ It's Simple UIImageView Category Class which is for downloading image from remot
 [screenshot1_thumb]: https://github.com/mpatelCAS/MPProgressViewCell/blob/master/ScreenShots/Simulator%20Screen%20Shot%20Dec%2030%2C%202015%2C%2011.42.09%20AM.png
 [screenshot1]: https://github.com/mpatelCAS/MPProgressViewCell/blob/master/ScreenShots/Simulator%20Screen%20Shot%20Dec%2030%2C%202015%2C%2011.42.09%20AM.png
 
+## Installation
+
+MPProgressIndicatorCell is available through [CocoaPods](http://cocoapods.org) ,To install it, simply add the following line to your Podfile:
+
+```ruby
+pod "MPProgressIndicatorCell"
+```
+
+
 ## Usage
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+Then import the ProgressViewCell into your source files (or into your bridging header if you're using with Swift and not using frameworks with CocoaPods):
+
+```obj-c
+#import "MPProgressCell.h"
+```
+
+If you are using Swift and frameworks, then you can just import the browser into your Swift source file:
+
+```swift
+#import "MPProgressIndicatorCell/MPProgressCell.h"
+```
 
 MPProgressViewCell is designed to be presented within a navigation controller. Simply set the delegate (which must conform to `MPProgressCellDelegate`) 
 
@@ -70,31 +93,6 @@ Added a new method in which you can also show processing with placeholder image
     return 110.0f;
 }
 
-```
-
-## Installation
-
-MPProgressIndicatorCell is available through [CocoaPods](http://cocoapods.org) ,To install it, simply add the following line to your Podfile:
-
-```ruby
-pod "MPProgressIndicatorCell"
-```
-
-
-## Usage
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-Then import the ProgressViewCell into your source files (or into your bridging header if you're using with Swift and not using frameworks with CocoaPods):
-
-```obj-c
-#import "MPProgressCell.h"
-```
-
-If you are using Swift and frameworks, then you can just import the browser into your Swift source file:
-
-```swift
-#import "MPProgressIndicatorCell/MPProgressCell.h"
 ```
 
 
