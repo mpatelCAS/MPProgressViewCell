@@ -91,7 +91,7 @@ Then import the ProgressViewCell into your source files (or into your bridging h
 If you are using Swift and frameworks, then you can just import the browser into your Swift source file:
 
 ```swift
-import MPProgressCell
+#import "MPProgressIndicatorCell/MPProgressCell.h"
 ```
 
 
