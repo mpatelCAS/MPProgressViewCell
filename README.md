@@ -6,12 +6,15 @@ It's Simple UIImageView Category Class which is for downloading image from remot
 [screenshot1_thumb]: https://github.com/mpatelCAS/MPProgressViewCell/blob/master/ScreenShots/Simulator%20Screen%20Shot%20Dec%2030%2C%202015%2C%2011.42.09%20AM.png
 [screenshot1]: https://github.com/mpatelCAS/MPProgressViewCell/blob/master/ScreenShots/Simulator%20Screen%20Shot%20Dec%2030%2C%202015%2C%2011.42.09%20AM.png
 
-
 ## Usage
 
 MPProgressViewCell is designed to be presented within a navigation controller. Simply set the delegate (which must conform to `MPProgressCellDelegate`) 
 
 See the code snippet below for an example of how to implement the MPProgressViewCell. There is also a simple demo app within the project.
+
+## What's new in 1.0
+
+Added a new method in which you can also show processing with placeholder image
 
 ###  Delegates
 
@@ -99,9 +102,6 @@ If you are using Swift and frameworks, then you can just import the browser into
 
 Mayank Patel, mpatel@customapps.in
 
-## NOTE : 
-
-Better to use this from Pod,
 
 ## License
 
