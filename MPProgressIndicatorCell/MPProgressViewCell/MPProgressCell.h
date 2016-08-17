@@ -21,7 +21,10 @@
 @end
 
 
-@interface MPProgressCell : UIImageView
+@interface MPProgressCell : UIImageView {
+    
+    CGRect destinationFrame;
+}
 
 @property (nonatomic, assign) id <MPProgressCellDelegate> delegate;
 

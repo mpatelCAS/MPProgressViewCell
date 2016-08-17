@@ -27,7 +27,6 @@
     }
 
     DACircularProgressView *progressView = _circularProgressView;
-    CGRect destinationFrame;
     if (!progressView)
     {
         destinationFrame = CGRectMake(CGRectGetWidth(self.frame) * kRatio / 2.0f,
@@ -103,7 +102,6 @@
     }
 
     DACircularProgressView *progressView = _circularProgressView;
-    CGRect destinationFrame;
     if (!progressView)
     {
         destinationFrame = CGRectMake(CGRectGetWidth(self.frame) * kRatio / 2.0f,

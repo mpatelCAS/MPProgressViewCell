@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MPProgressIndicatorCell"
-  s.version      = "0.1"
+  s.version      = "1.0"
   s.summary      = "A custom UIPickerView with a simple list of options, along with a toolbar for Done/Cancel and a faded backdrop view."
   s.homepage     = "https://github.com/mpatelCAS/MPProgressViewCell"
 
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author       = { "Mayank Patel" => "mpatel@customapps.in" }
   s.source       = { 
     :git => "https://github.com/mpatelCAS/MPProgressViewCell.git", 
-    :tag => "0.1"
+    :tag => "1.0"
   }
 
   s.platform     = :ios, '8.0'
